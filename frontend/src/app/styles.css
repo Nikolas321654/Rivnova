@@ -1,0 +1,131 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-navy: #183152;
+  --color-primary: #24543a;
+  --color-primary-hover: #173a2a;
+  --color-indigo: #29337d;
+  --color-brand-yellow: #ece65a;
+  --color-background: #f6f1ea;
+  --color-surface: #fcf9f5;
+  --color-surface-muted: #f3ede6;
+  --color-selection: #dce8d8;
+  --color-modal: #f5efe8;
+  --color-text-primary: #101d17;
+  --color-text-secondary: #626960;
+  --color-border: #ccc6bc;
+  --color-status-success: #357646;
+  --color-status-success-bg: #e5f0df;
+  --color-status-warning: #9a5e12;
+  --color-status-warning-bg: #fff0d3;
+  --color-status-danger: #b75042;
+  --color-status-danger-bg: #fce9e4;
+  --color-status-neutral: #626960;
+  --color-status-neutral-bg: #eae8e2;
+  --spacing-control-x: 1rem;
+  --spacing-control-y: 0.625rem;
+  --spacing-card: 1.5rem;
+  --radius-control: 0.75rem;
+  --radius-card: 1rem;
+  --radius-badge: 9999px;
+  --text-ui-2xs: 0.6875rem;
+  --text-ui-2xs--line-height: 1rem;
+  --text-ui-xs: 0.75rem;
+  --text-ui-xs--line-height: 1rem;
+  --text-ui-sm: 0.875rem;
+  --text-ui-sm--line-height: 1.25rem;
+  --text-ui-base: 1rem;
+  --text-ui-base--line-height: 1.5rem;
+  --text-ui-lg: 1.25rem;
+  --text-ui-lg--line-height: 1.625rem;
+  --text-ui-xl: 1.5rem;
+  --text-ui-xl--line-height: 1.875rem;
+  --text-display: 2rem;
+  --text-display--line-height: 2.5rem;
+  --font-sans: Helvetica, Arial, sans-serif;
+  --font-display: Righteous, Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-family: var(--font-sans);
+  background: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+body {
+  margin: 0;
+}
+
+@layer base {
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+}
+
+@utility display-accent {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+@utility type-page-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-ui-xl);
+  line-height: var(--text-ui-xl--line-height);
+  color: var(--color-navy);
+}
+
+@utility type-panel-title {
+  font-size: var(--text-ui-lg);
+  line-height: var(--text-ui-lg--line-height);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+@utility type-section-title {
+  font-size: var(--text-ui-sm);
+  line-height: var(--text-ui-sm--line-height);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+@utility type-item-title {
+  font-size: var(--text-ui-sm);
+  line-height: var(--text-ui-sm--line-height);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+@utility type-label {
+  font-size: var(--text-ui-xs);
+  line-height: var(--text-ui-xs--line-height);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+@utility type-metric {
+  font-size: var(--text-ui-lg);
+  line-height: var(--text-ui-lg--line-height);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-primary);
+}
+
+@utility type-value {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-primary);
+}
+
+@keyframes sticker-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

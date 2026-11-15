@@ -1,0 +1,11 @@
+dist
+coverage
+node_modules
+package-lock.json
+pnpm-lock.yaml
+public/mockServiceWorker.js
+src/shared/api/types.gen.ts
+AGENTS.md
+docs/architecture.md
+docs/design.md
+docs/work-plan.md
