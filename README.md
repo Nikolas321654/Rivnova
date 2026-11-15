@@ -1,6 +1,6 @@
-# FarmFlow
+# Rivnova
 
-FarmFlow helps farmers monitor their fields and make informed day-to-day decisions. It combines satellite observations and weather forecasts with field analytics, alerts, and machine-learning predictions for irrigation, crop stress, and yield.
+Rivnova helps farmers monitor their fields and make informed day-to-day decisions. It combines satellite observations and weather forecasts with field analytics, alerts, and machine-learning predictions for irrigation, crop stress, and yield.
 
 ## Table of Contents
 
